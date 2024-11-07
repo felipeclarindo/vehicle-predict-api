@@ -27,13 +27,15 @@ Esses resultados podem ser aplicados para melhorar a tomada de decisões em gest
 pip install -r requirements.txt
 ```
 
-2. Rode as celular jupyter `model_training.ipynb`.
+2. Rode as celular jupyter do arquivo `model_training.ipynb`.
 
-3. Rode o arquivo api.py
+3. Inicie a api
 
 ```bash
 python api/api.py
 ```
+
+4. O link da api será disponivel no terminal.
 
 ## Contribuição
 
