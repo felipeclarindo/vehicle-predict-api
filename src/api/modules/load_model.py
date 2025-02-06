@@ -1,10 +1,13 @@
 import joblib
 from pathlib import Path
 
+
 def load_model(file_path):
     try:
         if not Path.exists(Path(__file__).resolve().parent.parent.parent / file_path):
-            raise FileNotFoundError("Falha ao carregar o modelo. (Arquivo não encontrado)")
+            raise FileNotFoundError(
+                f"Falha ao carregar o modelo. (Arquivo {file_path} não encontrado)"
+            )
         model = joblib.load(file_path)
         return model
     except FileNotFoundError as e:
